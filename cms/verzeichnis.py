@@ -5,8 +5,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
-from Testsuite.config import CMS_EINTRÄGE, SMS_EMPFAENGER, TXT_PATH
-from Testsuite.sender import sms_sender
+from config import CMS_EINTRÄGE, SMS_EMPFAENGER, TXT_PATH
+from sender import sms_sender
 
 
 def get_driver():

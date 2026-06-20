@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 import time
 
-from Testsuite.config import TEST_MAIL, TEST_NUMMER, MESSAGE
+from config import TEST_MAIL, TEST_NUMMER, MESSAGE
 
 
 def get_driver():

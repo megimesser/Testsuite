@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 from twilio.rest import Client
 import re
-from Testsuite.config import TXT_PATH,AUTH_TOKEN,ACCOUNT_SID,TWILIO_NUMBER,SMS_EMPFAENGER
+from config import TXT_PATH,AUTH_TOKEN,ACCOUNT_SID,TWILIO_NUMBER,SMS_EMPFAENGER
 load_dotenv()
 
 

@@ -4,8 +4,8 @@ from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 import os
 import re
-from Testsuite.sender import sms_sender
-from Testsuite.config import TOKEN_PATH, SCOPES, CLIENT_PATH,ERWARTETE_ANZAHL,TXT_PATH,SMS_EMPFAENGER
+from sender import sms_sender
+from config import TOKEN_PATH, SCOPES, CLIENT_PATH,ERWARTETE_ANZAHL,TXT_PATH,SMS_EMPFAENGER
 
 
 def get_service():

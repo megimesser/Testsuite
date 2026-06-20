@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import Select, WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 
-from Testsuite.config import TEST_MAIL, MESSE_LOOP_A
+from config import TEST_MAIL, MESSE_LOOP_A
 
 
 def get_driver():

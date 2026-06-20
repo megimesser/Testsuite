@@ -1,33 +1,33 @@
 import time
 
 # --- Konfiguration ---
-from Testsuite.config import *  # nur das aufzählen, was du hier wirklich nutzt
+from config import *  # nur das aufzählen, was du hier wirklich nutzt
 
 # --- Seitenaufrufe ---
-from Testsuite.seitenaufruf import (
+from seitenaufruf import (
     requester,
     text_writer,
     message_emptyer
 )
 
 # --- Gmail ---
-from Testsuite.gmail.deleter import delete_all, get_service
-from Testsuite.gmail.filter import get_service, main_reader
+from gmail.deleter import delete_all, get_service
+from gmail.filter import get_service, main_reader
 
 # --- Messe-Workflows ---
-from Testsuite.seitennachricht import aussteller, besucher
-from Testsuite.karten import messe_looper, freikarte
-from Testsuite.anmeldung import messe_looper_anmeldung, anmeldung
+from seitennachricht import aussteller, besucher
+from karten import messe_looper, freikarte
+from anmeldung import messe_looper_anmeldung, anmeldung
 
 # --- Benachrichtigung ---
-from Testsuite.sender import sms_sender, sms_searcher
+from sender import sms_sender, sms_searcher
 
 
 # --- CMS --- 
-from Testsuite.cms.verzeichnis import verzeichnis, zaehle_items,counter_cms
+from cms.verzeichnis import verzeichnis, zaehle_items,counter_cms
 
 
-from Testsuite.mailing.nachrichten import sender
+from mailing.nachrichten import sender
 
 
 

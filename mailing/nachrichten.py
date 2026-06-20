@@ -3,7 +3,7 @@ import smtplib
 from email.message import EmailMessage
 from datetime import *
 import os 
-from Testsuite.config import GOOGLE_KEY,TXT_PATH,ACCOUNT,TARGET
+from config import GOOGLE_KEY,TXT_PATH,ACCOUNT,TARGET
 
 
 def sender(GOOGLE_KEY, ACCOUNT, TARGET):
