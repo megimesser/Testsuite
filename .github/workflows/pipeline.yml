@@ -1,4 +1,4 @@
-name: Health Check # angezeigte Name innerhalb der Github - Oberfläche
+name: Pipelinetest # angezeigte Name innerhalb der Github - Oberfläche
 
 on:    # on: definiert wann die Pipeline läuft - hier bei jedem push auf den Main Branch
   push:
