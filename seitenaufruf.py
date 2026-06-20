@@ -8,7 +8,7 @@ from config import HAUPTSEITEN_LINKS, UNTERSEITEN_LINKS,UNTERSEITEN_AUSSTELLER,U
 
 
 ### Functions ###
-
+# Test
 def message_emptyer(path,message):
     with open(path,"w") as f:
         f.writelines(message)
