@@ -9,6 +9,7 @@ parser.add_argument(
 )
 
 args = parser.parse_args()
+#test
 
 if args.strict:
     print("sys.exit(0)")

@@ -1,7 +1,10 @@
-name: Pipelinetest # angezeigte Name innerhalb der Github - Oberfläche
+name: CI# angezeigte Name innerhalb der Github - Oberfläche
 
 on:    # on: definiert wann die Pipeline läuft - hier bei jedem push auf den Main Branch
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
     #paths:
@@ -26,6 +29,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      
+      - name: Abhängigkeiten installieren
+        run: pip install -r requirements.txt
+      
+      - name: Linting
+        run: pip install ruff && ruff check .
 
       #Script wird ausgeführt
 
