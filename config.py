@@ -59,3 +59,7 @@ CMS_EINTRÄGE = 149
 GOOGLE_KEY = os.environ.get("GOOGLE_KEY","")
 ACCOUNT = os.environ.get("ACCOUNT", "")
 TARGET = os.environ.get("TARGET","")
+
+
+#Für Ausführung auf CentOS 
+CHROME_BINARY= "/usr/bin/chromium-browser"

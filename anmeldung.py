@@ -5,23 +5,14 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select, WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
+import os
 
 from config import TEST_MAIL, MESSE_LOOP_A
+from driver_setup import get_driver
 
 
+ 
 
-def get_driver():
-    options = Options()
-    options.add_argument("--headless=new")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--window-size=1920,1080")
-
-    chrome_binary = os.environ.get("CHROME_BINARY")
-    if chrome_binary:
-        options.binary_location = chrome_binary
-
-    return webdriver.Chrome(options=options)
 def messe_looper_anmeldung(TEST_MAIL, MESSE_LOOP_A):
     for messe in MESSE_LOOP_A:
         anmeldung(TEST_MAIL, messe)
