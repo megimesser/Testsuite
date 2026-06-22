@@ -9,3 +9,15 @@ Geschrieben in Python. Kombiniert Selenium-basiertes Prüfen der Website mit Gma
 ## Motivation
 
 Nach dem Launch der Kundenseite **wohnbautrend.de** (erstellt mit Webflow) brauchte ich eine automatisierte Möglichkeit, die Seite regelmäßig auf Erreichbarkeit, korrekte CMS-Inhalte und funktionierende Filter zu prüfen — statt manuell durchzuklicken. Diese Suite übernimmt diese Checks und meldet Abweichungen, sodass Probleme erkannt werden, bevor der Kunde sie bemerkt.
+
+
+```mermaid
+flowchart TD
+    Cron[Cronjob auf CentOS Homelab] --> Main[main.py]
+    Main --> Gmail[Gmail API: Postfach leeren]
+    Main --> Selenium[Selenium: Formulare testen]
+    Selenium --> Web[wohnbautrend.de]
+    Main --> Check[Status prüfen + Bericht schreiben]
+    Check --> SMS[Twilio: SMS bei Fehler]
+    Check --> Mail[SMTP: Testbericht per Mail]
+```
