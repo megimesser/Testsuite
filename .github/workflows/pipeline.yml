@@ -36,8 +36,8 @@ jobs:
           pip install pytest
       
      # Linter Korrekturen durchführen - bricht aktuell die Tests ab 
-     # - name: Linting
-     #  run: pip install ruff && ruff check .
+      - name: Linting
+        run: pip install ruff && ruff check .
 
       #Script wird ausgeführt
 
