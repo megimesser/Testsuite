@@ -6,8 +6,7 @@ from config import TEST_MAIL, MESSE_LOOP_A
 from driver_setup import get_driver
 
 
-test = "a"
-#Test für äänderungen
+
 
 
 def messe_looper_anmeldung(TEST_MAIL, MESSE_LOOP_A):
